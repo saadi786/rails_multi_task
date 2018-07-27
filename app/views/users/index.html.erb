@@ -1,0 +1,13 @@
+
+<%=link_to 'new',new_user_path, class: 'btn btn-primary' %>
+<% @users.each do |user| %>
+  <h2>User Name</h2>
+  <%= user.name %> <br>
+  <% user.posts.each do |project| %>
+     <h3>Post</h3>
+     <%= project.name %><br>
+  <% end %>
+<% end %>
+<%= will_paginate %>
+
+

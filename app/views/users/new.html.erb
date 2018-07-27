@@ -1,0 +1,5 @@
+<%= form_for @user , url: {action: 'create'} do |user| %>
+     <%= user.label 'Name' %>
+     <%= user.text_field :name %>
+     <%= user.submit %>
+<% end %>
